@@ -6,6 +6,9 @@ from app.core import REQUIRED_COLS, export_excel
 st.set_page_config(page_title="Manual Input", page_icon="🧾", layout="wide")
 inject_global_css()
 
+inject_global_css(bg_path="image/bgsrg.png")
+render_header(logo_path="image/logo.png")
+
 st.title("🧾 Manual Input UKM (Dashboard Manual)")
 
 if "df_manual" not in st.session_state:
